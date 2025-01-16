@@ -27794,7 +27794,7 @@ krayin.fix(){
 }
 
 krayin.br(){
-  wget -O /var/lib/docker/volumes/krayin_data/_data/packages/Webkul/Admin/src/Resources/lang/es/app.php https://github.com/rodrigocampos3/SetupOrionTest/refs/heads/main/Extras/Krayin/app.php > /dev/null 2>&1
+  wget -O /var/lib/docker/volumes/krayin_data/_data/packages/Webkul/Admin/src/Resources/lang/es/app.php https://raw.githubusercontent.com/rodrigocampos3/SetupOrionTes/refs/heads/main/Extras/Krayin/app.php > /dev/null 2>&1
   if [ $? -eq 0 ]; then
       echo "1/2 - [ OK ] - Traduzindo..."
   else
