@@ -3165,7 +3165,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   traefik:
-    image: traefik:v2.11.2
+    image: traefik:v3.2.2
     command:
       - "--api.dashboard=true"
       - "--providers.docker.swarmMode=true"
@@ -27708,7 +27708,7 @@ traefik.fix() {
     echo ""
     echo "Trocando a versão da Stack do traefik..."
     ## Trocando a versão na stack
-    sed -i 's/image: traefik:latest/image: traefik:v2.11.2/' /root/traefik.yaml
+    sed -i 's/image: traefik:latest/image: traefik:v3.2.2/' /root/traefik.yaml
     if [ $? -eq 0 ]; then
         echo "1/3 - [ OK ] - Alterando versão na Stack"
     else
@@ -29230,7 +29230,7 @@ while true; do
             n8n.workflows
             ;;
 
-        ## Corrigir imagem da stack do traefik para 2.11.2
+        ## Corrigir imagem da stack do traefik para 3.2.2
         traefik.fix)
             traefik.fix    
             ;;
